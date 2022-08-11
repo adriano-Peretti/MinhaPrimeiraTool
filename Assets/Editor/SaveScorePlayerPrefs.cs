@@ -66,6 +66,7 @@ public class SaveScorePlayerPrefs : EditorWindow
     void ResetScore()
     {
         players.Clear();
+        PlayerPrefs.DeleteAll();
     }
 
 }
