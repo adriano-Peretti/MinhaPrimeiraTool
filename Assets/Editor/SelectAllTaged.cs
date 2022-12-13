@@ -47,14 +47,14 @@ public class SelectAllTaged : EditorWindow
 
                 for (int i = 0; i < tempString.Length; i++)
                 {
-                    for (int j = 0; j < tempChars.Length; j++)      //Go over every character in our selection
+                    for (int j = 0; j < tempChars.Length; j++)      
                     {
-                        if (tempString[i + j].CompareTo(tempChars[j]) != 0)  //if next character is not the character in our selection, go back to the 1st For Loop
+                        if (tempString[i + j].CompareTo(tempChars[j]) != 0)  
                         {
                             break;
                         }
 
-                        if (j == tempChars.Length - 1)       //if every character was correct, We found our selection!!
+                        if (j == tempChars.Length - 1)       
                         {
                             Debug.Log("Found the word!");
                             tempString = searchTag.ToString();
@@ -102,7 +102,6 @@ public class SelectAllTaged : EditorWindow
         else
         {
             log = "Não encontrado nenhum objeto com essa Tag";
-            //EditorGUILayout.LabelField("Não encontrado nenhum objeto com essa Tag");
         }
 
         GUILayout.EndScrollView();
